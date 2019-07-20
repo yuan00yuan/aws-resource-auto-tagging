@@ -1,0 +1,170 @@
+{
+
+  "version": "0",
+
+  "id": "ea52926f-06f5-0027-13a5-821744f41fe9",
+
+  "detail-type": "AWS API Call via CloudTrail",
+
+  "source": "aws.dynamodb",
+
+  "account": "123456",
+
+  "time": "2018-08-02T10:59:05Z",
+
+  "region": "cn-north-1",
+
+  "resources": [
+  ]
+  ,
+
+  "detail": {
+
+    "eventVersion": "1.05",
+
+    "userIdentity": {
+
+      "type": "IAMUser",
+
+      "principalId": "AIDAPQEH4HX27PBJWDXVU",
+
+      "arn": "arn:aws-cn:iam::123456:user/dicey",
+
+      "accountId": "123456",
+
+      "accessKeyId": "ASIAX5VF7RACBTKGUQKG",
+
+      "userName": "dicey",
+
+      "sessionContext": {
+
+        "attributes": {
+
+          "mfaAuthenticated": "false",
+
+          "creationDate": "2018-08-02T01:28:06Z"
+        }
+
+      },
+
+      "invokedBy": "AWS Internal"
+    }
+    ,
+
+    "eventTime": "2018-08-02T10:59:05Z",
+
+    "eventSource": "dynamodb.amazonaws.com",
+
+    "eventName": "CreateTable",
+
+    "awsRegion": "cn-north-1",
+
+    "sourceIPAddress": "AWS Internal",
+
+    "userAgent": "AWS Internal",
+
+    "requestParameters": {
+
+    "provisionedThroughput": {
+
+        "writeCapacityUnits": 5,
+
+        "readCapacityUnits": 5
+      }
+      ,
+
+      "tableName": "DynamoDB2Autotag",
+
+      "keySchema": [
+
+        {
+
+          "attributeName": "sdddd",
+
+          "keyType": "HASH"
+        }
+
+      ]
+      ,
+
+      "attributeDefinitions": [
+
+        {
+
+          "attributeType": "S",
+
+          "attributeName": "sdddd"
+        }
+
+      ]
+
+    }
+    ,
+
+    "responseElements": {
+
+      "tableDescription": {
+
+        "attributeDefinitions": [
+
+          {
+
+            "attributeType": "S",
+
+            "attributeName": "sdddd"
+          }
+
+        ]
+        ,
+
+        "tableName": "DynamoDB2Autotag",
+
+        "provisionedThroughput": {
+
+          "writeCapacityUnits": 5,
+
+          "numberOfDecreasesToday": 0,
+
+          "readCapacityUnits": 5
+        }
+        ,
+
+        "tableArn": "arn:aws-cn:dynamodb:cn-north-1:123456:table/DynamoDB2Autotag",
+
+        "creationDateTime": "Aug 2,
+        2018 10:59:05 AM",
+
+        "tableId": "799cb310-3578-45bb-9edd-5523fa38c583",
+
+        "itemCount": 0,
+
+        "keySchema": [
+
+          {
+
+            "attributeName": "sdddd",
+
+            "keyType": "HASH"
+          }
+
+        ]
+        ,
+
+        "tableStatus": "CREATING",
+
+        "tableSizeBytes": 0
+      }
+
+    }
+    ,
+
+    "requestID": "GFQDVKF5S4QHDI0D0N5FECU1G7VV4KQNSO5AEMVJF66Q9ASUAAJG",
+
+    "eventID": "08105c8b-49e3-49e7-ab38-9ff2fb6d733b",
+
+    "eventType": "AwsApiCall",
+
+    "apiVersion": "2012-08-10"
+  }
+
+}

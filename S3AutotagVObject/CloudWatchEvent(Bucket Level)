@@ -1,0 +1,85 @@
+{
+
+  "version": "0",
+
+  "id": "cc33249a-bb9a-4c17-6595-1973f1c353fb",
+
+  "detail-type": "AWS API Call via CloudTrail",
+
+  "source": "aws.s3",
+
+  "account": "123456",
+
+  "time": "2018-08-02T08:30:56Z",
+
+  "region": "cn-north-1",
+
+  "resources": [
+  ]
+  ,
+
+  "detail": {
+
+    "eventVersion": "1.05",
+
+    "userIdentity": {
+
+        "type": "IAMUser",
+
+        "principalId": "AIDAPQEH4HX27PBJWDXVU",
+
+        "arn": "arn:aws-cn:iam::123456:user/dicey",
+
+        "accountId": "123456",
+
+        "accessKeyId": "ASIAX5VF7RACHDPKQRGC",
+
+        "userName": "dicey",
+
+        "sessionContext": {
+
+        "attributes": {
+
+          "mfaAuthenticated": "false",
+
+          "creationDate": "2018-08-02T01:28:06Z"
+        }
+      },
+
+      "invokedBy": "AWS Internal"
+    },
+
+    "eventTime": "2018-08-02T08:30:56Z",
+
+    "eventSource": "s3.amazonaws.com",
+
+    "eventName": "CreateBucket",
+
+    "awsRegion": "cn-north-1",
+
+    "sourceIPAddress": "AWS Internal",
+
+    "userAgent": "AWS Internal",
+
+    "requestParameters": {
+
+      "CreateBucketConfiguration": {
+
+        "LocationConstraint": "cn-north-1",
+
+        "xmlns": "http://s3.amazonaws.com/doc/2006-03-01/"
+      },
+
+      "bucketName": "test-lambda-buckert"
+    },
+
+    "responseElements": null,
+
+    "requestID": "E76F564BA94924C6",
+
+    "eventID": "69c35163-ce37-48d2-8204-46cceeaeb829",
+
+    "eventType": "AwsApiCall"
+  }
+
+}

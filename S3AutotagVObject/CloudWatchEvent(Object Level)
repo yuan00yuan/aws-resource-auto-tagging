@@ -1,0 +1,127 @@
+{
+
+  "version": "0",
+
+  "id": "6b556da5-ddc6-9c47-9ccd-4c10d9972960",
+
+  "detail-type": "AWS API Call via CloudTrail",
+
+  "source": "aws.s3",
+
+  "account": "123456",
+
+  "time": "2018-08-02T08:13:12Z",
+
+  "region": "cn-north-1",
+
+  "resources": [
+  ]
+  ,
+
+  "detail": {
+
+    "eventVersion": "1.05",
+
+    "userIdentity": {
+
+      "type": "IAMUser",
+
+      "principalId": "AIDAPQEH4HX27PBJWDXVU",
+
+      "arn": "arn:aws-cn:iam::123456:user/dicey",
+
+      "accountId": "123456",
+
+      "accessKeyId": "ASIAX5VF7RACEIVLMRL6",
+
+      "userName": "dicey",
+
+      "sessionContext": {
+
+        "attributes": {
+
+          "creationDate": "2018-08-02T01:28:06Z",
+
+          "mfaAuthenticated": "false"
+        }
+
+      }
+      ,
+
+      "invokedBy": "AWS Internal"
+    }
+    ,
+
+    "eventTime": "2018-08-02T08:13:12Z",
+
+    "eventSource": "s3.amazonaws.com",
+
+    "eventName": "PutObject",
+
+    "awsRegion": "cn-north-1",
+
+    "sourceIPAddress": "AWS Internal",
+
+    "userAgent": "AWS Internal",
+
+    "requestParameters": {
+
+      "X-Amz-Date": "20180802T081311Z",
+
+      "bucketName": "test-bucket-auto-tag",
+
+      "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+
+      "x-amz-acl": "private",
+
+      "X-Amz-SignedHeaders": "content-type;host;x-amz-acl;x-amz-storage-class",
+
+      "X-Amz-Expires": "299",
+
+      "key": "WechatIMG1.jpeg",
+
+      "x-amz-storage-class": "STANDARD"
+    }
+    ,
+
+    "responseElements": null,
+
+    "additionalEventData": {
+
+      "x-amz-id-2": "dfWjBX+WeMg9FfzfsKocLMzudXSobrS7IgD9Wu39gd3Ci0Ejsqg7R+3MdLrJPWy0FAmL+ebcvO4="
+    }
+    ,
+
+    "requestID": "D66A3C87ED723317",
+
+    "eventID": "297529b5-50ae-4d0a-8f75-bf4a05f9fa15",
+
+    "readOnly": false,
+
+    "resources": [
+
+      {
+
+        "type": "AWS::S3::Object",
+
+        "ARN": "arn:aws-cn:s3:::test-bucket-auto-tag/WechatIMG1.jpeg"
+      }
+      ,
+
+      {
+
+        "accountId": "123456",
+
+        "type": "AWS::S3::Bucket",
+
+        "ARN": "arn:aws-cn:s3:::test-bucket-auto-tag"
+      }
+
+    ],
+
+      "eventType": "AwsApiCall",
+
+      "recipientAccountId": "123456"
+  }
+
+}

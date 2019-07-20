@@ -1,0 +1,274 @@
+{
+
+  "version": "0",
+
+  "id": "25b240e7-bd52-7d1d-ac7e-c77a07704125",
+
+  "detail-type": "AWS API Call via CloudTrail",
+
+  "source": "aws.rds",
+
+  "account": "123456",
+
+  "time": "2018-08-02T12:07:57Z",
+
+  "region": "cn-north-1",
+
+  "resources": [
+  ]
+  ,
+
+  "detail": {
+
+    "eventVersion": "1.04",
+
+    "userIdentity": {
+
+      "type": "IAMUser",
+
+      "principalId": "AIDAPQEH4HX27PBJWDXVU",
+
+      "arn": "arn:aws-cn:iam::123456:user/dicey",
+
+      "accountId": "123456",
+
+      "accessKeyId": "ASIAX5VF7RACOQVIELOD",
+
+      "userName": "dicey",
+
+      "sessionContext": {
+
+        "attributes": {
+
+          "mfaAuthenticated": "false",
+
+          "creationDate": "2018-08-02T01:28:06Z"
+        }
+
+      }
+      ,
+
+      "invokedBy": "AWS Internal"
+    }
+    ,
+
+    "eventTime": "2018-08-02T12:07:57Z",
+
+    "eventSource": "rds.amazonaws.com",
+
+    "eventName": "CreateDBInstance",
+
+    "awsRegion": "cn-north-1",
+
+    "sourceIPAddress": "AWS Internal",
+
+    "userAgent": "AWS Internal",
+
+    "requestParameters": {
+
+      "dBInstanceIdentifier": "tes1234567",
+
+      "allocatedStorage": 20,
+
+      "dBInstanceClass": "db.t2.micro",
+
+      "engine": "mysql",
+
+      "masterUsername": "tes1234567",
+
+      "masterUserPassword": "****",
+
+      "vpcSecurityGroupIds": [
+
+        "sg-68f65c0f"
+      ]
+      ,
+
+      "dBParameterGroupName": "default.mysql5.7",
+
+      "backupRetentionPeriod": 7,
+
+      "port": 3306,
+
+      "multiAZ": false,
+
+      "engineVersion": "5.7.22",
+
+      "autoMinorVersionUpgrade": true,
+
+      "licenseModel": "general-public-license",
+
+      "iops": 0,
+
+      "optionGroupName": "default:mysql-5-7",
+
+      "publiclyAccessible": false,
+
+      "storageType": "GP2",
+
+      "copyTagsToSnapshot": true,
+
+      "monitoringInterval": 0,
+
+      "enableIAMDatabaseAuthentication": false
+    }
+    ,
+
+    "responseElements": {
+
+      "dBInstanceIdentifier": "tes1234567",
+
+      "dBInstanceClass": "db.t2.micro",
+
+      "engine": "mysql",
+
+      "dBInstanceStatus": "creating",
+
+      "masterUsername": "tes1234567",
+
+      "allocatedStorage": 20,
+
+      "preferredBackupWindow": "10:06-10:36",
+
+      "backupRetentionPeriod": 7,
+
+      "dBSecurityGroups": [
+      ]
+      ,
+
+      "vpcSecurityGroups": [
+
+      {
+
+        "vpcSecurityGroupId": "sg-68f65c0f",
+
+        "status": "active"
+      }
+
+      ]
+      ,
+
+      "dBParameterGroups": [
+
+        {
+
+          "dBParameterGroupName": "default.mysql5.7",
+
+          "parameterApplyStatus": "in-sync"
+        }
+
+      ]
+      ,
+
+      "dBSubnetGroup": {
+
+        "dBSubnetGroupName": "default",
+
+        "dBSubnetGroupDescription": "default",
+
+        "vpcId": "vpc-98e6a6fc",
+
+        "subnetGroupStatus": "Complete",
+
+        "subnets": [
+
+          {
+
+            "subnetIdentifier": "subnet-577c7220",
+
+            "subnetAvailabilityZone": {
+
+              "name": "cn-north-1b"
+            }
+            ,
+
+            "subnetStatus": "Active"
+          }
+          ,
+
+          {
+
+            "subnetIdentifier": "subnet-a03bb6c4",
+
+            "subnetAvailabilityZone": {
+
+              "name": "cn-north-1a"
+            }
+            ,
+
+            "subnetStatus": "Active"
+          }
+
+        ]
+
+      }
+      ,
+
+      "preferredMaintenanceWindow": "sun:09:05-sun:09:35",
+
+      "pendingModifiedValues": {
+
+        "masterUserPassword": "****"
+      }
+      ,
+
+      "multiAZ": false,
+
+      "engineVersion": "5.7.22",
+
+      "autoMinorVersionUpgrade": true,
+
+      "readReplicaDBInstanceIdentifiers": [
+      ]
+      ,
+
+      "licenseModel": "general-public-license",
+
+      "optionGroupMemberships": [
+
+        {
+
+          "optionGroupName": "default:mysql-5-7",
+
+          "status": "in-sync"
+        }
+
+      ]
+      ,
+
+      "publiclyAccessible": false,
+
+      "storageType": "gp2",
+
+      "dbInstancePort": 0,
+
+      "storageEncrypted": false,
+
+      "dbiResourceId": "db-VIMQRKJJMIC6JT2A6Q56CHBMYY",
+
+      "cACertificateIdentifier": "rds-ca-2014",
+
+      "domainMemberships": [
+      ]
+      ,
+
+      "copyTagsToSnapshot": true,
+
+      "monitoringInterval": 0,
+
+      "dBInstanceArn": "arn:aws-cn:rds:cn-north-1:123456:db:tes1234567",
+
+      "iAMDatabaseAuthenticationEnabled": false,
+
+      "performanceInsightsEnabled": false
+    }
+    ,
+
+    "requestID": "44a1d0fb-f6d1-41e1-9c9c-12e49fd16a32",
+
+    "eventID": "9b34b4ea-6d51-4253-8347-2acdbd60f92d",
+
+    "eventType": "AwsApiCall"
+  }
+
+}

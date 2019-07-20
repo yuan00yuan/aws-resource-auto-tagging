@@ -1,0 +1,182 @@
+{
+
+  "version": "0",
+
+  "id": "bb958666-959b-5cd1-c942-49ef4e1d254a",
+
+  "detail-type": "AWS API Call via CloudTrail",
+
+  "source": "aws.redshift",
+
+  "account": "123456789",
+
+  "time": "2018-08-03T01:34:32Z",
+
+  "region": "cn-north-1",
+
+  "resources": [
+  ]
+  ,
+
+  "detail": {
+
+    "eventVersion": "1.04",
+
+    "userIdentity": {
+
+      "type": "IAMUser",
+
+      "principalId": "AIDAPQEH4HX27PBJWDXVU",
+
+      "arn": "arn:aws-cn:iam::123456789:user/dicey",
+
+      "accountId": "123456789",
+
+      "accessKeyId": "ASIAX5VF7RACPRFD46IN",
+
+      "userName": "dicey",
+
+      "sessionContext": {
+
+        "attributes": {
+
+          "mfaAuthenticated": "false",
+
+          "creationDate": "2018-08-03T01:14:46Z"
+        }
+
+      }
+      ,
+
+      "invokedBy": "AWS Internal"
+    }
+    ,
+
+    "eventTime": "2018-08-03T01:34:32Z",
+
+    "eventSource": "redshift.amazonaws.com",
+
+    "eventName": "CreateCluster",
+
+    "awsRegion": "cn-north-1",
+
+    "sourceIPAddress": "AWS Internal",
+
+    "userAgent": "AWS Internal",
+
+    "requestParameters": {
+
+      "clusterIdentifier": "fdsdadadasda",
+
+      "allowVersionUpgrade": true,
+
+      "enhancedVpcRouting": false,
+
+      "encrypted": false,
+
+      "clusterVersion": "1.0",
+
+      "masterUsername": "asdasdad1",
+
+      "masterUserPassword": "****",
+
+      "automatedSnapshotRetentionPeriod": 1,
+
+      "port": 5439,
+
+      "clusterType": "single-node",
+
+      "nodeType": "dc1.large",
+
+      "publiclyAccessible": true,
+
+      "vpcSecurityGroupIds": [
+
+      "sg-79fc531e"
+      ]
+
+    }
+    ,
+
+    "responseElements": {
+
+      "nodeType": "dc1.large",
+
+      "preferredMaintenanceWindow": "thu:18:00-thu:18:30",
+
+      "clusterStatus": "creating",
+
+      "vpcId": "vpc-98e6a6fc",
+
+      "enhancedVpcRouting": false,
+
+      "masterUsername": "asdasdad1",
+
+      "clusterSecurityGroups": [
+      ]
+      ,
+
+      "pendingModifiedValues": {
+
+        "masterUserPassword": "****"
+      }
+      ,
+
+      "maintenanceTrackName": "current",
+
+      "clusterVersion": "1.0",
+
+      "encrypted": false,
+
+      "publiclyAccessible": true,
+
+      "tags": [
+      ]
+      ,
+
+      "clusterParameterGroups": [
+
+        {
+
+          "parameterGroupName": "default.redshift-1.0",
+
+          "parameterApplyStatus": "in-sync"
+        }
+
+      ]
+      ,
+
+      "allowVersionUpgrade": true,
+
+      "automatedSnapshotRetentionPeriod": 1,
+
+      "numberOfNodes": 1,
+
+      "vpcSecurityGroups": [
+
+        {
+
+          "status": "active",
+
+          "vpcSecurityGroupId": "sg-79fc531e"
+        }
+
+      ],
+
+      "iamRoles": [
+      ]
+      ,
+
+      "clusterIdentifier": "fdsdadadasda",
+
+      "clusterSubnetGroupName": "default"
+    },
+
+    "requestID": "5e5d2c98-96bd-11e8-9e95-371c7dd578f8",
+
+    "eventID": "e4c01de2-ee32-4c8a-a876-5c7387db1cc3",
+
+    "eventType": "AwsApiCall"
+  }
+
+}

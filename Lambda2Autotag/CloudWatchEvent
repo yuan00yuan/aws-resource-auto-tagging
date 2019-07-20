@@ -1,0 +1,143 @@
+{
+  "version": "0",
+
+  "id": "c59391d5-4f1f-6e92-77f7-6d3bf82525cb",
+
+  "detail-type": "AWS API Call via CloudTrail",
+
+  "source": "aws.lambda",
+
+  "account": "12345678",
+
+  "time": "2018-08-02T03:14:07Z",
+
+  "region": "cn-north-1",
+
+  "resources": [
+  ]
+  ,
+
+  "detail": {
+
+    "eventVersion": "1.05",
+
+      "userIdentity": {
+
+      "type": "IAMUser",
+
+      "principalId": "AIDAPQEH4HX27PBJWDXVU",
+
+      "arn": "arn:aws-cn:iam::12345678:user/dicey",
+
+      "accountId": "12345678",
+
+      "accessKeyId": "ASIAX5VF7RACEWHFBEFW",
+
+      "userName": "dicey",
+
+        "sessionContext": {
+
+          "attributes": {
+
+          "mfaAuthenticated": "false",
+
+          "creationDate": "2018-08-02T01:28:06Z"
+          }
+        },
+
+      "invokedBy": "AWS Internal"
+        },
+
+    "eventTime": "2018-08-02T03:14:07Z",
+
+    "eventSource": "lambda.amazonaws.com",
+
+    "eventName": "CreateFunction20150331",
+
+    "awsRegion": "cn-north-1",
+
+    "sourceIPAddress": "AWS Internal",
+
+    "userAgent": "AWS Internal",
+
+    "requestParameters": {
+
+    "functionName": "helloworld",
+
+    "kMSKeyArn": "",
+
+    "role": "arn:aws-cn:iam::12345678:role/TestUserForLambda",
+
+    "memorySize": 128,
+
+    "code": {
+    }
+    ,
+
+    "timeout": 3,
+
+    "environment": {
+    }
+    ,
+
+    "deadLetterConfig": {
+    }
+    ,
+
+    "publish": false,
+
+    "description": "A starter AWS Lambda function.",
+
+    "handler": "lambda_function.lambda_handler",
+
+    "tags": {
+
+    "lambda-console:blueprint": "hello-world-python3"
+    }
+    ,
+
+    "runtime": "python3.6"
+    }
+    ,
+
+    "responseElements": {
+
+    "role": "arn:aws-cn:iam::12345678:role/TestUserForLambda",
+
+    "revisionId": "3c5da9e8-4ddd-4347-9b79-4db4a5e8b847",
+
+    "handler": "lambda_function.lambda_handler",
+
+    "memorySize": 128,
+
+    "runtime": "python3.6",
+
+    "functionArn": "arn:aws-cn:lambda:cn-north-1:12345678:function:helloworld",
+
+    "functionName": "helloworld",
+
+    "codeSize": 343,
+
+    "version": "$LATEST",
+
+    "description": "A starter AWS Lambda function.",
+
+    "lastModified": "2018-08-02T03:14:07.742+0000",
+
+    "codeSha256": "qcC9Sg0vLkmn9mqRe2k7y+RbOoX8mBhEg9uxWRjPzLI=",
+
+    "environment": {
+    }
+    ,
+
+    "timeout": 3
+    }
+    ,
+
+    "requestID": "1e41f4bf-9602-11e8-bef2-99b52ed59f79",
+
+    "eventID": "ac77f302-1ae4-4dd7-983d-955c980513e4",
+
+    "eventType": "AwsApiCall"
+    }
+}

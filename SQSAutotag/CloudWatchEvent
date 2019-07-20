@@ -1,0 +1,86 @@
+{
+
+  "version": "0",
+
+  "id": "c79ee313-2561-036d-4016-4cd96361564e",
+
+  "detail-type": "AWS API Call via CloudTrail",
+
+  "source": "aws.sqs",
+
+  "account": "123456789",
+
+  "time": "2018-08-03T04:16:35Z",
+
+  "region": "cn-north-1",
+
+  "resources": [
+  ]
+  ,
+
+  "detail": {
+
+    "eventVersion": "1.04",
+
+    "userIdentity": {
+
+      "type": "IAMUser",
+
+      "principalId": "AIDAPQEH4HX27PBJWDXVU",
+
+      "arn": "arn:aws-cn:iam::123456789:user/dicey",
+
+      "accountId": "123456789",
+
+      "accessKeyId": "ASIAX5VF7RACFXKDLUDR",
+
+      "userName": "dicey",
+
+      "sessionContext": {
+
+        "attributes": {
+
+          "mfaAuthenticated": "false",
+
+          "creationDate": "2018-08-03T01:14:46Z"
+        }
+
+      }
+      ,
+
+      "invokedBy": "AWS Internal"
+    }
+    ,
+
+    "eventTime": "2018-08-03T04:16:35Z",
+
+    "eventSource": "sqs.amazonaws.com",
+
+    "eventName": "CreateQueue",
+
+    "awsRegion": "cn-north-1",
+
+    "sourceIPAddress": "AWS Internal",
+
+    "userAgent": "AWS Internal",
+
+    "requestParameters": {
+
+     "queueName": "testSQS"
+    }
+    ,
+
+    "responseElements": {
+
+     "queueUrl": "https://sqs.cn-north-1.amazonaws.com.cn/123456789/testSQS"
+    }
+    ,
+
+    "requestID": "f98fe2c9-8910-58bb-95a1-b11450736c27",
+
+    "eventID": "f620b080-b2e2-47c9-86f3-11b6852f0646",
+
+    "eventType": "AwsApiCall"
+  }
+
+}

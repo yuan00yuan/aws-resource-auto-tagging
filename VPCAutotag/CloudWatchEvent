@@ -1,0 +1,130 @@
+{
+
+  "version": "0",
+
+  "id": "9ab89ba3-c8ab-2db0-8a9f-75f3a9a204c4",
+
+  "detail-type": "AWS API Call via CloudTrail",
+
+  "source": "aws.ec2",
+
+  "account": "123456789",
+
+  "time": "2018-08-03T03:22:21Z",
+
+  "region": "cn-north-1",
+
+  "resources": [
+  ]
+  ,
+
+  "detail": {
+
+    "eventVersion": "1.05",
+
+    "userIdentity": {
+
+      "type": "IAMUser",
+
+      "principalId": "AIDAPQEH4HX27PBJWDXVU",
+
+      "arn": "arn:aws-cn:iam::123456789:user/dicey",
+
+      "accountId": "123456789",
+
+      "accessKeyId": "ASIAX5VF7RACEEEOHQHU",
+
+      "userName": "dicey",
+
+      "sessionContext": {
+
+        "attributes": {
+
+          "mfaAuthenticated": "false",
+
+          "creationDate": "2018-08-03T01:14:46Z"
+        }
+
+      }
+      ,
+
+      "invokedBy": "AWS Internal"
+    }
+    ,
+
+    "eventTime": "2018-08-03T03:22:21Z",
+
+    "eventSource": "ec2.amazonaws.com",
+
+    "eventName": "CreateVpc",
+
+    "awsRegion": "cn-north-1",
+
+    "sourceIPAddress": "AWS Internal",
+
+    "userAgent": "AWS Internal",
+
+    "requestParameters": {
+
+      "cidrBlock": "10.0.0.0/16",
+
+      "instanceTenancy": "default"
+    }
+    ,
+
+    "responseElements": {
+
+      "requestId": "28a33eae-ca05-4fa7-b922-bd42ee95b165",
+
+      "vpc": {
+
+        "vpcId": "vpc-90d291f4",
+
+        "state": "pending",
+
+        "cidrBlock": "10.0.0.0/16",
+
+        "cidrBlockAssociationSet": {
+
+          "items": [
+
+          {
+
+            "cidrBlock": "10.0.0.0/16",
+
+            "associationId": "vpc-cidr-assoc-529d123b",
+
+            "cidrBlockState": {
+
+            "state": "associated"
+          }
+
+          }
+
+          ]
+
+        }
+        ,
+
+        "dhcpOptionsId": "dopt-fe88299a",
+
+        "instanceTenancy": "default",
+
+        "tagSet": {
+        }
+        ,
+
+        "isDefault": false
+      }
+
+    }
+    ,
+
+    "requestID": "28a33eae-ca05-4fa7-b922-bd42ee95b165",
+
+    "eventID": "6d3e2a9d-ca18-4727-9b90-898aa7d2cb22",
+
+    "eventType": "AwsApiCall"
+  }
+
+}
